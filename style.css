@@ -1,0 +1,16 @@
+body {
+    background-color: lightblue;
+    font-style: helvetica, sans-serif, arial;
+}
+
+
+h1 {
+    font-size: 50px;
+    font-weight: 400;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    align-items: center;
+}
