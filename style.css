@@ -11,6 +11,13 @@ h1 {
 }
 
 ul {
-    list-style: none;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    text-align: center;
+    margin-bottom: 30px;
+    }
+
+p {
+    text-align: justify;
 }
