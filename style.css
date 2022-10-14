@@ -1,34 +1,59 @@
+
+html {
+    height: 100%;
+}
+
 body {
     background: linear-gradient(#e66465, #9198e5);
-    font-style: helvetica, sans-serif, arial;
-    
+    background-color:rgb(35, 136, 203);
+    font-style: "Poppins", helvetica, sans-serif, arial;
+    /* height: 100%; */
+    display: flex;
+    align-items: center;
+    /* overflow-y: hidden; */
 }
 
-
-h1 {
-    font-size: 50px;
-    font-weight: 400;
-    text-align: center;
-    text-shadow: 2px 2px 5px whitesmoke
+.container{
+    background-color: rbga(255, 255, 0.6);
+    padding: 30px 0;
+    border-radius: 20px;
+    box-shadow: rbga(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    min-width: 60vw;
+    max-width: 70vw;
+    min-height: 60vh;
+    max-height: 90vh;
+    margin: 0 auto;
 }
 
-ul {
+form section{
+   padding: 0 5%;
+   margin-top: 20px; 
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+.input-group{
     display: flex;
     flex-direction: column;
-    list-style-type: none;
-    text-align: center;
-    margin-bottom: 30px;
-    }
-
-
-p {
-    text-align: justify;
-    font-size: 2em;
+    margin: 10px;
 }
 
-.button {
-        color: rgb(255, 255, 255); font-size: 17px; line-height: 17px; padding: 13px; border-radius: 13px; font-family: Georgia, serif; font-weight: normal; text-decoration: none; font-style: normal; font-variant: normal; text-transform: none; background-image: linear-gradient(to right, rgb(28, 110, 164) 0%, rgb(35, 136, 203) 50%, rgb(20, 78, 117) 100%); box-shadow: rgba(0, 0, 0, 0.29) 5px 5px 38px 5px; border: 2px solid rgb(28, 110, 164); display: inline-block;}
-        .myButton:hover {
-        background: #1C6EA4; }
-        .myButton:active {
-        background: #144E75; }
+.input-group label{
+    padding-left: 10px;
+}
+
+.input-group input [type="text"]{
+    height: 30px;
+    width: 250px;
+    border: 1px solid #edede8;
+    border-radius: 20px;
+    box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 2px 0px;
+    padding-left: 10px;
+    margin: 3px 0 10px;
+}
+
+.hide {
+    display: none;
+}

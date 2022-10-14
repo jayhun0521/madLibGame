@@ -3,16 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
-    <title>Mad Lib Game</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+   <title>Baby Mad Lib</title>
+
+  </head>
 <body>
+  <script src="./madlibs.js"></script> 
     
+  <div class="container">
+      <header>
+        <h1>Baby Mad Lib</h1>
+        <h2>Baby Advice</h2>
+        <p><strong>Mad Libs</strong> are stories with words removed and replaced by blank spaces. Fill in the blanks for fun
+          baby advice! Make sure to think outside the box. The wackier, the better!</p>
+      </header>
+      <main>
+        <form action="madlibs-form" name="madlibs-form" onsubmit="submitMadLibs(event)">
+          <section id="madlibs-inputs">
+            <div class="input-group">
+              <label for="proper_noun_1">Proper Noun</label>
+              <input type="text" id="proper_noun_1" name="proper_noun_1" required>
+            </div>
+
+
+            <div class="input-group">
+              <label for="proper_noun_2">Proper Noun</label>
+              <input type="text" id="proper_noun_2" name="proper_noun_2" required>
+            </div>
+            
+            
+            <div class="input-group">
+              <label for="quantity">Quantity</label>
+              <input type="text" id="quantity" name="quantity" required>
+            </div>
+            
+            
+            <div class="input-group">
+              <label for="verb1">Verb</label>
+              <input type="text" id="verb1" name="verb1" required>
+            </div>
+            
+            
+            <div class="input-group">
+              <label for="noun1">Noun</label>
+              <input type="text" id="noun1" name="noun1" required>
+            </div>
+            
+            
+            <div class="input-group">
+              <label for="adjective1">Adjective</label>
+              <input type="text" id="adjective1" name="adjective1" required>
+            </div>
+            
+            
+            <div class="input-group">
+              <label for="verb2">Verb</label>
+              <input type="text" id="verb2" name="verb2" required>
+            </div>
+            
+            
+            <div class="input-group">
+              <label for="verb3">Verb</label>
+              <input type="text" id="verb3" name="verb3" required>
+            </div>
+            
+            
+            <div class="input-group">
+              <label for="verb4">number</label>
+              <input type="text" id="verb4" name="verb4" required>
+            </div>
+            
+            
+            <div class="input-group">
+              <label for="noun2">Noun</label>
+              <input type="text" id="noun2" name="noun2" required>
+            </div>
+            
+            
+            <div class="input-group">
+              <label for="verb5">Verb</label>
+              <input type="text" id="verb5" name="verb5" required>
+            </div>
+            
+            
+            <div class="input-group">
+              <label for="noun3">Noun</label>
+              <input type="text" id="noun3" name="noun3" required>
+            </div>
+            
+            
+            <div class="input-group">
+              <label for="verb6">Verb</label>
+              <input type="text" id="verb6" name="verb6" required>
+            </div>
+            
+            
+            <div class="input-group">
+              <label for="noun4">Noun</label>
+              <input type="text" id="noun4" name="noun4" required>
+            </div>
+            
+            
+            <div class="input-group">
+              <label for="adjective2">Adjective</label>
+              <input type="text" id="adjective2" name="adjective2" required>
+            </div>
+            
+            
+            <div class="input-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+          </section>
+          <section id="madlibs-submit">
+            <button type="submit" onclick="createParagraph()">Generate</button>
+          </section>
+        </form>
+        <section id="completed-story" class="hide"></section>
+      </main>
+    </div>
     
-    <h1>Baby Mad Lib</h1>
-    <form onSubmit="return false" action="">
+    <!-- <form onSubmit="return false" action="">
+
       <ul>
         <li><input type="text" placeholder="proper noun" id="text one"></li>
         <li><input type="text" placeholder="proper noun" id="text two"></li>
@@ -30,8 +146,8 @@
         <li><input type="text" placeholder="noun" id="text fourteen"></li>
         <li><input type="text" placeholder="adjective" id="text fifteen"></li>
         <li><input type="text" placeholder="name" id="text sixteen"></li>
-      
-        <div>
+       -->
+        <!-- <div>
         <li><button class="button" type="botton" id="button" onclick="createParagraph()">Ready.Set.Go!!!</li>
       </div> 
       </ul>
@@ -39,10 +155,10 @@
     <div id="answer"></div>
 
     <div>
-        <p>My name is (proper noun) and I have known (proper noun) for (quantity) years. I (verb) all the way from (noun) to celebrate today. I am so (adjective) for the parents. My best advice? Don't forget to (verb) before you (verb) and (verb) after the (noun).</p>
+        <p>My name is (proper noun) and I have known (proper noun) for (quantity) years. I (verb) all the way from (noun) to celebrate today. I am so (adjective) for the parents. My best advice? Don't forget to (verb) before you (verb) and (verb) after the (noun).
+        Daddy you should always (verb) mommy's (noun) and Mommy, you should always (verb) daddy's (noun). You are going to be the (adjective) parents ever! Love, (name)</p>
     </div>
-    <div>
-        <p>Daddy you should always (verb) mommy's (noun) and Mommy, you should always (verb) daddy's (noun). You are going to be the (adjective) parents ever! Love, (name)</p>
-    </div>
+  </div> -->
+    
 </body>
 </html>
