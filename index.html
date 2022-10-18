@@ -23,103 +23,104 @@
         <p><strong>Mad Libs</strong> are stories with words removed and replaced by blank spaces. Fill in the blanks for fun
           baby advice! Make sure to think outside the box. The wackier, the better!</p></div>
       </header>
-
-      <main style="background: linear-gradient(#9198e5, #e66465)">
+      
+      <div class="input-answer-container">
+      <main style="background: linear-gradient(#9198e5, #e66465);">
         <form action= "" name="madlibs-form" onsubmit="return false">
           <section id="madlibs-inputs">
             <div class="input-group">
-              <label for="proper_noun_1">You're Name</label>
-              <input type="text" id="proper_noun_1" name="proper_noun_1" required>
+              <label for="proper_noun_1">Your Name</label>
+              <input type="text" id="proper_noun_1" name="proper_noun_1" >
             </div>
 
 
             <div class="input-group">
               <label for="proper_noun_2">Who do you know?</label>
-              <input type="text" id="proper_noun_2" name="proper_noun_2" required>
+              <input type="text" id="proper_noun_2" name="proper_noun_2" >
             </div>
             
             
             <div class="input-group">
               <label for="quantity">How Many?</label>
-              <input type="text" id="quantity" name="quantity" required>
+              <input type="text" id="quantity" name="quantity" >
             </div>
             
             
             <div class="input-group">
               <label for="verb1">How'd you get here?</label>
-              <input type="text" id="verb1" name="verb1" required>
+              <input type="text" id="verb1" name="verb1" >
             </div>
             
             
             <div class="input-group">
               <label for="noun1">From where?</label>
-              <input type="text" id="noun1" name="noun1" required>
+              <input type="text" id="noun1" name="noun1" >
             </div>
             
             
             <div class="input-group">
               <label for="adjective1">How do you feel?</label>
-              <input type="text" id="adjective1" name="adjective1" required>
+              <input type="text" id="adjective1" name="adjective1" >
             </div>
             
             
             <div class="input-group">
               <label for="verb2">Do what?</label>
-              <input type="text" id="verb2" name="verb2" required>
+              <input type="text" id="verb2" name="verb2" >
             </div>
             
             
             <div class="input-group">
               <label for="verb3">And do what?</label>
-              <input type="text" id="verb3" name="verb3" required>
+              <input type="text" id="verb3" name="verb3" >
             </div>
             
             
             <div class="input-group">
               <label for="verb4">And do what?</label>
-              <input type="text" id="verb4" name="verb4" required>
+              <input type="text" id="verb4" name="verb4" >
             </div>
             
             
             <div class="input-group">
               <label for="noun2">To what?</label>
-              <input type="text" id="noun2" name="noun2" required>
+              <input type="text" id="noun2" name="noun2" >
             </div>
             
             
             <div class="input-group">
               <label for="verb5">What should be done?</label>
-              <input type="text" id="verb5" name="verb5" required>
+              <input type="text" id="verb5" name="verb5" >
             </div>
             
             
             <div class="input-group">
               <label for="noun3">To what?</label>
-              <input type="text" id="noun3" name="noun3" required>
+              <input type="text" id="noun3" name="noun3" >
             </div>
             
             
             <div class="input-group">
               <label for="verb6">What else should be done?</label>
-              <input type="text" id="verb6" name="verb6" required>
+              <input type="text" id="verb6" name="verb6" >
             </div>
             
             
             <div class="input-group">
               <label for="noun4">To what?</label>
-              <input type="text" id="noun4" name="noun4" required>
+              <input type="text" id="noun4" name="noun4">
             </div>
             
             
             <div class="input-group">
               <label for="adjective2">What kind?</label>
-              <input type="text" id="adjective2" name="adjective2" required>
+              <input type="text" id="adjective2" name="adjective2">
             </div>
             
             
             <div class="input-group">
               <label for="name">Your Name</label>
-              <input type="text" id="name" name="name" required>
+              <input type="text" id="name" name="name">
             </div>
           </section>
           <section id="madlibs-submit">
@@ -130,14 +131,10 @@
       </main>
     </div>
 
-
-    <!-- <div>
-        <p>My name is (proper noun) and I have known (proper noun) for (quantity) years. I (verb) all the way from (noun) to celebrate today. I am so (adjective) for the parents. My best advice? Don't forget to (verb) before you (verb) and (verb) after the (noun).
-        Daddy you should always (verb) mommy's (noun) and Mommy, you should always (verb) daddy's (noun). You are going to be the (adjective) parents ever! Love, (name)</p>
-    </div> -->
+    <div id="completed-story"></div>
+    </div>
   </div> 
 
-  <div id="completed-story"></div>
-    
+ 
 </body>
 </html>
