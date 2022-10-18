@@ -3,14 +3,25 @@ html {
     height: 100%;
 }
 
+header{
+    
+    text-align: center;
+    font-style: helvetica, sans-serif, arial;
+}
+
 body {
     background: linear-gradient(#e66465, #9198e5);
-    background-color:rgb(35, 136, 203);
-    font-style: "Poppins", helvetica, sans-serif, arial;
-    /* height: 100%; */
+    font-style: helvetica, sans-serif, arial;
     display: flex;
     align-items: center;
-    /* overflow-y: hidden; */
+    background-repeat: no-repeat; 
+    box-shadow: 20em;
+    
+}
+
+p{
+
+    text-align: justify;
 }
 
 .container{

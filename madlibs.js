@@ -1,25 +1,33 @@
-const submitMadlibs = (event) => {
-    alert('hey!');
-    event.preventDefault();
-
-    const form = new FormData(event.target);
-    const userSubmission = Object.fromEntries(form);
-
-    const story = `<h3>My Completed Story:</h3>
-    <p>My name is <span class="inserted-text">${userSubmission.proper_noun_1}</span> and I have known <span class="inserted-text">${userSubmission.proper_noun_2}</span> for <span class="inserted-text">${userSubmission.quantity}</span> years. I <span class="inserted-text">${userSubmission.verb1}</span> all the way from <span class="inserted-text">${userSubmission.noun1}</span> to celebrate today. I am so <span class="inserted-text">${userSubmission.adjective1}</span> for the parents. My best advice? Don't forget to <span class="inserted-text">${userSubmission.verb2}</span> before you <span class="inserted-text">${userSubmission.verb3}</span> and <span class="inserted-text">${userSubmission.verb4}</span> after the <span class="inserted-text">${userSubmission.noun2}</span>. Daddy you should always <span class="inserted-text">${userSubmission.verb5}</span> mommy's <span class="inserted-text">${userSubmission.noun3}</span> and Mommy, you should always <span class="inserted-text">${userSubmission.verb6}</span> daddy's <span class="inserted-text">${userSubmission.noun4}</span>. You are going to be the <span class="inserted-text">${userSubmission.adjective2}</span> parents ever! Love, <span class="inserted-text">${userSubmission.name}</span>.</p>`;
-    
-    
-}
-
+console.log('madlibs.js is connected')
 
 function createParagraph(){
+    console.log("create paragraph has been logged")
     var wordOne = document.getElementById("proper_noun_1").value;
     var wordTwo = document.getElementById("proper_noun_2").value;
+    var wordThree = document.getElementById("quantity").value;
+    var wordFour = document.getElementById("verb1").value;
+    var wordFive = document.getElementById("noun1").value;
+    var wordSix = document.getElementById("adjective1").value;
+    var wordSeven = document.getElementById("verb2").value;
+    var wordEight = document.getElementById("verb3").value;
+    var wordNine = document.getElementById("verb4").value;
+    var wordTen = document.getElementById("noun2").value;
+    var wordEleven = document.getElementById("verb5").value;
+    var wordTwelve = document.getElementById("noun3").value;
+    var wordThirteen = document.getElementById("verb6").value;
+    var wordFourteen = document.getElementById("noun4").value;
+    var wordFifteen = document.getElementById("adjective2").value;
+    var wordSixteen = document.getElementById("name").value;
+    
+    console.log(wordOne, wordTwo, wordThree, wordFour, wordFive, wordSix, wordSeven, wordEight, wordNine, wordTen, wordEleven, wordTwelve, wordThirteen, wordFourteen, wordFifteen)
+    
 
-    var paragraph = "<p>THis is the begininning of our Madlib " + wordOne + " and th"
+    var paragraph = " <p>My name is " + wordOne + " and I have known " + wordTwo + " for " + wordThree + " years." + " I " + wordFour + " all the way from " + wordFive + " to celebrate today. I am so " + wordSix + " for the parents. My best advice is don't forget to " + wordSeven + " before you " + wordEight + " and " + wordNine + " after the " + wordTen + ". Daddy you should always " + wordEleven + " mommy's " + wordTwelve + " and Mommy, you should always " + wordThirteen + " Daddy's " + wordFourteen + ". You're going to be the " + wordFifteen + " parents ever! Love, " + wordSixteen + ".</p>"
+
+    console.log(paragraph);
 
     document.getElementById("completed-story").innerHTML = paragraph;
-}
 
+}
 
 
